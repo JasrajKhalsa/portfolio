@@ -5,34 +5,29 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "Solid Starters",
-    category: "Low-Code Platform",
-    tools: "Angular, Next.js, NestJS, MongoDB",
+    title: "Azure Medallion Data Lake Architecture",
+    category: "Data Platform",
+    tools: "Azure Data Factory, Databricks, PySpark, Airflow",
     image: "/images/Solidx.png",
+    points: [
+      "Migrated 1M+ records from On-Prem VM to Azure using Azure Data Factory with Self-Hosted IR.",
+      "Integrated APIs using Python and Airflow operators to automate ingestion.",
+      "Built Medallion Architecture in ADLS Gen2 using Databricks (PySpark), improving data quality.",
+      "Developed metadata-driven pipelines, accelerating dataset onboarding by 50%.",
+      "Integrated Synapse with Key Vault, RBAC, and Logic Apps for security."
+    ]
   },
   {
-    title: "Radix",
-    category: "E-Commerce",
-    tools: "Angular, Next.js, NestJS, CMS",
+    title: "Modern ELT Pipeline",
+    category: "Data Engineering",
+    tools: "Snowflake, DBT, Amazon S3",
     image: "/images/radix.png",
-  },
-  {
-    title: "Bond Cancellation",
-    category: "Import-Export Automation",
-    tools: "Angular, Next.js, NestJS, Workflows",
-    image: "/images/bond.png",
-  },
-  {
-    title: "Sapphire",
-    category: "CRM Platform",
-    tools: "AngularJS, NestJS, PostgreSQL",
-    image: "/images/sapphire.png",
-  },
-  {
-    title: "Mpro",
-    category: "Insurance Platform",
-    tools: "React.js, Node.js, Microservices",
-    image: "/images/Maxlife.png",
+    points: [
+      "Designed cloud-native ELT pipeline following Medallion Architecture.",
+      "Leveraged incremental processing to transform 20M records.",
+      "Developed modular DBT models with integrated testing and documentation.",
+      "Implemented SCD Type-2 using DBT snapshots and star schema."
+    ]
   },
 ];
 
@@ -112,6 +107,15 @@ const Work = () => {
                           <span className="tools-label">Tools & Features</span>
                           <p>{project.tools}</p>
                         </div>
+                        {project.points && (
+                          <div className="carousel-points" style={{ marginTop: "1.5rem" }}>
+                            <ul style={{ paddingLeft: "1.2rem", margin: 0, fontSize: "clamp(0.9rem, 1vw, 1.1rem)", opacity: 0.8, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
+                              {project.points.map((point, i) => (
+                                <li key={i} style={{listStyleType: "disc"}}>{point}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
                       </div>
                     </div>
                     <div className="carousel-image-wrapper">

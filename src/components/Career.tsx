@@ -15,43 +15,37 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Ikshan</h5>
+                <h4>M.S., Information Science</h4>
+                <h5>The University of Arizona</h5>
               </div>
-              <h3>2020</h3>
+              <h3>2024</h3>
             </div>
             <p>
-              Built 6+ complete applications using React.js. Integrated backend
-              authentication using Node.js & MongoDB. Created responsive UI/UX
-              and designed wireframes using Figma.
+              Pursuing Master of Science in Information Science. Achieving a GPA of 3.8/4.0. Expected graduation in December 2025.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Senior Full Stack Developer</h4>
-                <h5>Monocept (Max Life Insurance)</h5>
+                <h4>Data Intern</h4>
+                <h5>Persistent Systems</h5>
               </div>
               <h3>2021</h3>
             </div>
             <p>
-              Led two development teams on Mpro, a large-scale insurance
-              operations platform. Developed multiple modules using React.js &
-              migrated critical functionalities to Node.js microservices.
+              Designed and deployed Azure Data Factory pipelines to migrate on-prem databases to Azure. Built parameterized ingestion frameworks and implemented Delta Lake Gold layer with PySpark caching.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Full Stack Developer</h4>
-                <h5>Logic Loop</h5>
+                <h4>Data Engineer</h4>
+                <h5>Persistent Systems</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2022</h3>
             </div>
             <p>
-              Building Solid, a proprietary low-code platform using Angular,
-              Next.js & NestJS. Delivering production-ready CMS-based projects
-              including e-commerce, CRM, and import-export automation systems.
+              Designed ELT pipelines for 35+ years of data from S3 to Snowflake using DBT. Built real-time streaming ingestion with Kafka and Spark Structured Streaming, reducing failure rates by 25%.
             </p>
           </div>
         </div>

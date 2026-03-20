@@ -29,6 +29,17 @@ const projects = [
       "Implemented SCD Type-2 using DBT snapshots and star schema."
     ]
   },
+  {
+    title: "Modern Data Engineering Pipeline – Airbnb Analytics Platform | GitHub",
+    category: "Data Engineering",
+    tools: "AWS S3, Snowflake, DBT",
+    image: "/images/placeholder.webp",
+    points: [
+      "Architected a scalable ELT pipeline ingesting 50K+ Airbnb records from AWS S3 into Snowflake, enabling structured analytics workflows and reducing manual data preparation by 60%.",
+      "Implemented a DBT-based transformation layer with 20+ modular models, reusable macros, and automated tests, improving pipeline maintainability and increasing data reliability by 30%.",
+      "Designed analytics-ready Star Schema data models with Fact and Dimension tables and implemented SCD Type-2 for historical tracking, improving analytical query performance by 40%."
+    ]
+  },
 ];
 
 const Work = () => {
@@ -111,7 +122,7 @@ const Work = () => {
                           <div className="carousel-points" style={{ marginTop: "1.5rem" }}>
                             <ul style={{ paddingLeft: "1.2rem", margin: 0, fontSize: "clamp(0.9rem, 1vw, 1.1rem)", opacity: 0.8, display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                               {project.points.map((point, i) => (
-                                <li key={i} style={{listStyleType: "disc"}}>{point}</li>
+                                <li key={i} style={{ listStyleType: "disc" }}>{point}</li>
                               ))}
                             </ul>
                           </div>

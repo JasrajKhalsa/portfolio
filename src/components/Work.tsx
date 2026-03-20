@@ -5,7 +5,7 @@ const projects = [
   {
     title: "Azure Medallion Data Lake Architecture",
     category: "Data Platform",
-    tools: "Azure Data Factory, Databricks, PySpark, Airflow",
+    tools: "Azure Data Factory, Databricks, PySpark, Azure Synapse Analytics Airflow",
     image: "/images/Azure_project.png",
     points: [
       "Migrated 1M+ records from On-Prem VM to Azure using Azure Data Factory with Self-Hosted IR.",
@@ -18,8 +18,8 @@ const projects = [
   {
     title: "Modern ELT Pipeline",
     category: "Data Engineering",
-    tools: "Snowflake, DBT, Amazon S3",
-    image: "/images/radix.png",
+    tools: "Snowflake, DBT, Amazon S3, Glue, Airflow",
+    image: "/images/snow_project.png",
     points: [
       "Designed cloud-native ELT pipeline following Medallion Architecture.",
       "Leveraged incremental processing to transform 20M records.",
@@ -30,7 +30,7 @@ const projects = [
   {
     title: "Modern Data Engineering Pipeline – Airbnb Analytics Platform | GitHub",
     category: "Data Engineering",
-    tools: "AWS S3, Snowflake, DBT",
+    tools: "AWS S3, Snowflake, DBT, Metadata-driven Approach, Airflow",
     image: "/images/Airbnb.png",
     points: [
       "Architected a scalable ELT pipeline ingesting 50K+ Airbnb records from AWS S3 into Snowflake, enabling structured analytics workflows and reducing manual data preparation by 60%.",
